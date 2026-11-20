@@ -16,6 +16,7 @@ const Sidebar = () => {
         <button onClick={() => navigate("/")}>Upload Patient</button>
         <button onClick={() => navigate("/studies")}>Studies</button>
         <button onClick={() => navigate("/settings")}>Settings</button>
+        <button onClick={() => navigate("/login")}>Login</button>
       </div>
       <div className="sidebar-logout">
         <button>Log out</button>
