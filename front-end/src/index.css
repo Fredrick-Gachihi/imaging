@@ -102,3 +102,140 @@
   background: #dc2626;
   color: white;
 }
+
+
+
+
+/* Main container */
+.patient-container {
+    width: 100%;
+    min-height: 100vh;
+    padding: 35px;
+    background: #f5f7fb;
+    box-sizing: border-box;
+}
+
+/* Registration card */
+.patient-card {
+    width: 100%;
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 35px;
+    background: #ffffff;
+    border: 1px solid #e5eaf1;
+    border-radius: 14px;
+    box-shadow: 0 5px 25px rgba(15, 23, 42, 0.05);
+}
+
+/* Heading */
+.patient-card h2 {
+    font-size: 25px;
+    font-weight: 700;
+    color: #1e293b;
+    margin-bottom: 8px;
+}
+
+.patient-card p {
+    color: #64748b;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+/* Form layout */
+.patient-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px;
+}
+
+/* Input fields */
+.patient-grid input {
+    width: 100%;
+    height: 48px;
+    padding: 0 15px;
+    border: 1px solid #dbe2ea;
+    border-radius: 8px;
+    outline: none;
+    background: #ffffff;
+    color: #334155;
+    font-size: 14px;
+    transition: all 0.25s ease;
+    box-sizing: border-box;
+}
+
+.patient-grid input::placeholder {
+    color: #94a3b8;
+}
+
+.patient-grid input:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+/* File upload */
+.report-upload {
+    margin-top: 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.report-upload label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #334155;
+}
+
+.report-upload input {
+    width: 100%;
+    padding: 15px;
+    border: 1px dashed #94a3b8;
+    border-radius: 8px;
+    background: #f8fafc;
+    font-size: 13px;
+    color: #64748b;
+    cursor: pointer;
+}
+
+/* Submit button */
+.patient-card button {
+    width: 100%;
+    height: 48px;
+    margin-top: 30px;
+    border: none;
+    border-radius: 8px;
+    background: #2563eb;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.patient-card button:hover {
+    background: #1d4ed8;
+}
+
+.patient-card button:active {
+    transform: scale(0.99);
+}
+
+/* Tablet and mobile */
+@media (max-width: 650px) {
+    .patient-container {
+        padding: 15px;
+    }
+
+    .patient-card {
+        padding: 22px;
+    }
+
+    .patient-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .patient-card h2 {
+        font-size: 21px;
+    }
+}
