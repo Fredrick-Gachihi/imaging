@@ -3,7 +3,8 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import Sidebar from './components/sidebar';
 import Patient from './pages/patient';
-import Login from './pages/login'
+import Login from './pages/login';
+import Studies from './pages/studies';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Patient />} />
             <Route path="/login" element={<Login/>} />
+            <Route path='/studies' element={<Studies />} />
           </Routes>
         </main>
       </div>
